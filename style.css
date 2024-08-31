@@ -38,6 +38,18 @@ body {
     align-items: center;
     background-color: var(--cor-neutra-40-);
     transition: background 0.2s linear;
+    
+}
+
+header{
+    background-image: url('images/image.png'); /* Caminho da imagem de fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    height: 700px;
+    width: 100%;
+    
+    object-fit: cover;
+    opacity: 0.9;
 }
 
 /*Tema Escuro*/
