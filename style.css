@@ -94,5 +94,28 @@ body.dark p{
     color: var(--azul01);
 }
 
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr auto 200px 200px;
+    grid-gap: 40px;
+    grid-template-areas:
+        "asEsq arDir"
+        "arEsq asDir";
+}
 
-/*FOOTER*/
+#asEsq {
+    grid-area: asEsq;
+}
+
+#asDir{
+    grid-area: asDir;
+}
+
+#arDir{
+    grid-area: arDir;
+}
+
+#arEsq{
+    grid-area: arEsq;
+}
