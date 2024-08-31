@@ -21,13 +21,13 @@
 }
 
 ::-webkit-scrollbar{
-    background-color: var(--azul01);
+    background-color: var(--cor-neutra-30-);
     width: 2vh;
 }
 
 ::-webkit-scrollbar-thumb{
     background-color: var(--azul02);
-    border: #028eb1 solid 1.5px;
+    border: solid 1.5px;
 }
 
 body {
@@ -49,7 +49,7 @@ header{
     width: 100%;
     
     object-fit: cover;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 /*Tema Escuro*/
