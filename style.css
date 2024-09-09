@@ -39,7 +39,6 @@ header{
     background-repeat: no-repeat;
     height: 600px;
     width: 100%;
-    
     object-fit: cover;
     opacity: 0.8;
 }
@@ -75,22 +74,14 @@ header{
 }
 
 .container {
-    color: #0e0c0c;
-    display: flex;
-    flex-direction: column;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 20px 0px 20px !important;
 }
 
 .container p{
     color: #0e0c0c;
     text-align: justify;
     font-family: "mina";
-}
-
-.imgsec3 {
-    height: 100%;
-    width: 100%;
-    
+    font-size: 30px;
 }
 
 p {
@@ -99,8 +90,29 @@ p {
 
 .container h3{
     font-family: "michroma";
+    font-size: 35px;
 }
 
 h1 {
-    font-family: "mina";
+    font-family: "michroma";
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1292px){
+    .gridContainer {
+        grid-template-areas:
+        "asEsq"
+        "arDir"
+        "asDir"
+        "arEsq";
+    }
+}
+
+@media screen and (max-width: 688px){
+    .imgsec3 {
+        height: 100%;
+        width: 100%;
+    }
 }
