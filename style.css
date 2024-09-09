@@ -79,3 +79,48 @@ header{
 #arEsq{
     grid-area: arEsq;
 }
+
+.titulo_section1{
+    margin-top: 50px;
+    font-family: 'michroma';
+    color: #0e0c0c;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo_section1 h2{
+    font-size: 56px;
+}
+
+.titulo_section1 h3{
+    margin-top: 30px;
+    font-size: 32px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    margin: 20px 40px 0 40px;
+    font-family: "mina";
+    text-align: center;
+    font-size: 24px;
+
+
+}
+
+.card:hover{
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card_icon{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
