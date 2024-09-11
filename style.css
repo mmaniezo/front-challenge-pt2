@@ -175,11 +175,26 @@ header a {
         width: 50vh;
         padding: 3vw;
         top: 30%;
-        left: 55%
+        left: 50%
     }
 
     .overlay h1{
         font-size: 14px;
+    }
+}
+
+@media(max-width: 320px) {
+    header{
+        height: 40vh;
+        background-image: url('images/image_menor.png');
+    }
+
+    .overlay{
+        top: 25%;
+    }
+
+    .overlay h1{
+        font-size: 12px;
     }
 }
 
