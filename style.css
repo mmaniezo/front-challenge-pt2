@@ -44,10 +44,9 @@ header{
     background-image: url('images/image.png'); 
     background-position: center; 
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 90vh;
     width: 100%;
-    padding: 0 20px 0 20px;
 }
 
 img.logo{
@@ -124,20 +123,26 @@ header a {
         width: 80vh;
         padding: 3vw;
         top: 50%;
-        left: 50%;
+        left: 60%;
         margin-top: 30px;
     }
 }
 
 @media (max-width: 768px) {
-    header {
-        height: 80vh; /
+    header{
+        height: 70vh; 
+        background-image: url('images/image_novo.png');
+    }
+
+    .overlay h1{
+        font-size: 18px;
     }
 }
 
 @media(max-width: 576px) {
     header {
-        height: 70vh; 
+        height: 50vh;
+        background-image: url('images/image_mini.png');
     }
     .menu_dropdown {
         left: 2rem;
@@ -152,8 +157,8 @@ header a {
     .overlay {
         width: 50vh;
         padding: 3vw;
-        top: 50%;
-        left: 50%
+        top: 30%;
+        left: 55%
     }
 
     .overlay h1 {
@@ -165,14 +170,18 @@ header a {
 }
 
 @media(max-width: 420px) {
+    
     .overlay {
-        width: 40vh;
+        width: 50vh;
         padding: 3vw;
-        top: 50%;
-        left: 50%
+        top: 30%;
+        left: 55%
+    }
+
+    .overlay h1{
+        font-size: 14px;
     }
 }
-
 
 
 .gridContainer {
@@ -204,7 +213,7 @@ header a {
 /* section 1 */
 
 .titulo_section1{
-    margin-top: 50px;
+    margin-top: 20px;
     font-family: 'michroma';
     color: #0e0c0c;
     display: block;
@@ -221,7 +230,8 @@ header a {
 }
 
 .titulo_section1 h3{
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
     font-family: "michroma";
     font-size: 24px;
 }
@@ -229,26 +239,21 @@ header a {
 .card{
     display: flex;
     align-items: center;
-    width: 244px;
+    width: 280px;
+    padding: 0 5px 0 5px;
     background-color: #05B2DC;
     transition: all 0.5s ease-in-out;
 }
 
-.cards-setas-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .cards{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
     font-family: "mina";
     text-align: center;
     font-size: 24px;
     flex-wrap: wrap; 
-    gap: 16px;
-    
+    gap: 5px;
 }
 
 div.card-body{
@@ -273,12 +278,6 @@ div.card-body{
     margin-bottom: 20px;
 }
 
-.setas {
-    display: flex;
-    justify-content: space-between;
-    width: 244px;
-    margin-top: 10px; 
-}
 
 .seta {
     width: 24px;
@@ -289,21 +288,21 @@ div.card-body{
     .card-text p{
         font-size: 15px;
     }
-    .card {
-        width: 30%;
-    }
 
     .cards{
+        grid-template-columns: repeat(3, 1fr); 
         gap: 6px;
+    }
+
+    .card {
+        width: 95%; 
+        font-size: 90%; 
     }
 
     .seta {
         width: 20px;
     }
 
-    .setas{
-        gap: 60px;
-    }
 }
 
 @media(max-width: 620px) {
@@ -318,7 +317,7 @@ div.card-body{
 
 @media (max-width: 576px) {
     .card-text {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 @media(max-width: 380px) {
