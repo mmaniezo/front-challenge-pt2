@@ -41,11 +41,11 @@ body {
 }
 
 header{
-    background-image: url('images/image.png'); 
+    background-image: url('images/image_pc.png'); 
     background-position: center; 
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 90vh;
+    background-size:contain;
+    height: 80vh;
     width: 100%;
 }
 
@@ -70,32 +70,9 @@ header a {
     text-decoration: none;
 }
 
-.overlay {
-    position: absolute;
-    top: 60%;
-    left: 70%;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: right;
-    padding: 20px;
-    width: 40vw;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    transition: all .5s ease-out;
-}
-
-.overlay h1 {
-    font-size: 25px;
-    line-height: 1.1;
-    font-family: "michroma";
-    text-align: start;
-}
 
 /* RESPONSIVIDADE */
-@media(max-width: 920px) {
+@media(max-width: 960px) {
 
     nav .link-pages,
     nav .register {
@@ -112,37 +89,31 @@ header a {
         align-content: center;
     }
 
-    .overlay h1 {
-        font-size: 20px;
-        line-height: 1.1;
-        font-family: "michroma";
-        text-align: justify;
-    }
-
-    .overlay {
-        width: 80vh;
-        padding: 3vw;
-        top: 50%;
-        left: 60%;
-        margin-top: 30px;
+    header{
+        height: 80vh;
+        
     }
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 850px) {
     header{
-        height: 70vh; 
-        background-image: url('images/image_novo.png');
+        height: 60vh; 
+        
     }
 
-    .overlay h1{
-        font-size: 18px;
+}
+
+@media (max-width: 730px) {
+    header{
+        background-image: url('images/image.png');
+         
     }
 }
 
 @media(max-width: 576px) {
     header {
-        height: 50vh;
-        background-image: url('images/image_mini.png');
+        height: 45vh; 
     }
     .menu_dropdown {
         left: 2rem;
@@ -154,47 +125,12 @@ header a {
         height: auto;
     }
 
-    .overlay {
-        width: 50vh;
-        padding: 3vw;
-        top: 30%;
-        left: 55%
-    }
-
-    .overlay h1 {
-        font-size: 16px;
-        line-height: 1.1;
-        font-family: "michroma";
-        text-align: start;
-    }
 }
 
-@media(max-width: 420px) {
-    
-    .overlay {
-        width: 50vh;
-        padding: 3vw;
-        top: 30%;
-        left: 50%
-    }
 
-    .overlay h1{
-        font-size: 14px;
-    }
-}
-
-@media(max-width: 320px) {
-    header{
+@media(max-width: 375px) {
+    header {
         height: 40vh;
-        background-image: url('images/image_menor.png');
-    }
-
-    .overlay{
-        top: 25%;
-    }
-
-    .overlay h1{
-        font-size: 12px;
     }
 }
 
@@ -298,8 +234,8 @@ div.card-body{
     width: 24px;
     height: auto;
 }
-
-@media (max-width: 796px) {
+/* atenção ao width dos cards */
+@media (max-width: 886px) { 
     .card-text p{
         font-size: 15px;
     }
