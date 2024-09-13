@@ -130,5 +130,9 @@ nav .toggle_btn {
     .menu_dropdown.open {
         width: 55vw;
     }
+
+    nav .toggle_btn {
+        font-size: 1.4rem;
+    }
 }
 

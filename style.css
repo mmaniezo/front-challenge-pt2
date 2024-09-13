@@ -41,12 +41,29 @@ body {
 }
 
 header{
-    background-image: url('images/image_pc.png'); 
+    position: relative;
+    background-image: url('images/image.png'); 
     background-position: center; 
     background-repeat: no-repeat;
-    background-size:contain;
-    height: 80vh;
+    background-size: cover;
+    height: 90vh;
     width: 100%;
+}
+
+.caixa {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 50vw;
+    transform: translate(-50%, -50%);;
+    background: rgba(0, 0, 0, 0.8); 
+    color: white;
+    padding: 20px;
+    text-align:start;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    max-width: 80%;
+    font-family:'michroma';
 }
 
 img.logo{
@@ -72,6 +89,7 @@ header a {
 
 
 /* RESPONSIVIDADE */
+
 @media(max-width: 960px) {
 
     nav .link-pages,
@@ -90,31 +108,31 @@ header a {
     }
 
     header{
-        height: 80vh;
-        
+        background-image: url('images/image_mobile.png');
+        height: 70vh;
     }
+    .caixa {
+        width: 60vw; 
+        top: 65%;    
+        font-size: 1rem; 
+    }
+    
 }
 
-
-@media (max-width: 850px) {
-    header{
-        height: 60vh; 
-        
-    }
-
-}
 
 @media (max-width: 730px) {
     header{
-        background-image: url('images/image.png');
-         
+        height: 60vh;
+    }
+    .caixa {
+        width: 70vw; 
+        top: 60%;   
+        font-size: 0.95rem; 
     }
 }
 
-@media(max-width: 576px) {
-    header {
-        height: 45vh; 
-    }
+@media(max-width: 640px) {
+
     .menu_dropdown {
         left: 2rem;
         width: unset;
@@ -125,13 +143,37 @@ header a {
         height: auto;
     }
 
+    header{
+        height: 50vh;
+    }
+    .caixa {
+        width: 80vw; 
+        top: 55%;    
+        font-size: 0.9rem; 
+    }
+
 }
 
+@media (max-width: 540px) {
+    .caixa {
+        width: 85vw;
+        top: 70%;  
+        font-size: 0.7rem; 
+        padding: 15px;
+    }
+}
 
 @media(max-width: 375px) {
     header {
         height: 40vh;
     }
+    .caixa {
+        width: 90vw; 
+        top: 65%;  
+        font-size: 0.5rem; 
+        text-align: center; 
+    }
+    
 }
 
 
@@ -148,14 +190,14 @@ header a {
 }
 
 .titulo_section1 h2{
-    font-size: 32px;
+    font-size: 2.2rem;
     font-weight: bold;
     font-family: "michroma";
     width: 100%;
 }
 
 .titulo_section1 h3{
-    margin-top: 20px;
+    margin-top: 1.9rem;
     margin-bottom: 30px;
     font-family: "michroma";
     font-size: 24px;
@@ -208,7 +250,7 @@ div.card-body{
     width: 24px;
     height: auto;
 }
-/* atenção ao width dos cards */
+
 @media (max-width: 886px) { 
     .card-text p{
         font-size: 15px;
@@ -232,11 +274,11 @@ div.card-body{
 
 @media(max-width: 620px) {
     .titulo_section1 h2{
-        font-size: 28px;
+        font-size: 1.6rem;
     }
 
     .titulo_section1 h3{
-        font-size: 20px;
+        font-size: 1.4rem;
     }
 }
 
@@ -244,17 +286,31 @@ div.card-body{
     .card-text {
         font-size: 12px;
     }
-}
-@media(max-width: 380px) {
+
     .titulo_section1 h2{
-        font-size: 28px;
+        font-size: 1.3rem;
     }
 
     .titulo_section1 h3{
-        font-size: 20px;
+        font-size: 1.1rem;
     }
 }
+@media(max-width: 380px) {
+    .titulo_section1 h2{
+        font-size: 1.1rem;
+    }
+
+    .titulo_section1 h3{
+        font-size: 0.9rem;
+    }
+}
+
+.secao3{
+    margin: 0 30px 0 30px;
+}
+
 .gridContainer {
+    
     padding: 10px 30px 0px 30px;
     display: grid;
     justify-items: center;
@@ -286,6 +342,10 @@ div.card-body{
     padding: 0px 20px 0px 20px !important;
 }
 
+.container h3{
+    color: #000000;
+}
+
 .container p{
     color: #0e0c0c;
     text-align: justify;
@@ -294,20 +354,22 @@ div.card-body{
 }
 
 p {
-    margin: 0px !important;
-    
-    
+    margin: 0px !important;    
 }
 
 .container h3{
     font-family: "michroma";
-    font-size: 35px;
+    font-size: 1.9rem;
     
+}
+
+.container p{
+    font-size: 1.5rem;
 }
 
 h1 {
     font-family: "michroma";
-    font-size: 40px;
+    font-size: 2.3rem;
     text-align: center;
     padding-bottom: 10px;
 }
@@ -328,6 +390,12 @@ h1 {
         width: 100%;
     }
 }
+
+/* @media screen and (max-width: 380px){
+    .imgsec3 img{
+        font-size: 30px;
+    }
+} */
 
 .video1{
     width: 686px;
