@@ -51,6 +51,7 @@ nav .toggle_btn {
     top: 50px;
     width:500px;
     height: 0;
+    z-index: 1;
     backdrop-filter: blur(100px);
     border-radius: 20px;
     overflow: hidden;
