@@ -468,3 +468,45 @@ div .box p{
     font-family: Mina;
 }
 
+@media (max-width: 768px) {
+    #secao2{
+        display: grid;
+        grid-template-areas: 'video1'
+        'texto'
+        'video2'
+        'box1'
+        'box2'
+        'box3';
+        justify-items: center;
+    }
+    .video1, .video2 {
+      width: 100%;
+      justify-items: center;
+    }
+    .box {
+      width: calc(50% - 20px);
+    }
+    .secao-texto{
+        width: 100%;
+    }
+    #box1{
+        justify-items: center;
+    }
+    .video1{
+        padding: 150px;
+        width: 130%;
+        height: 120%;
+    }
+
+
+  }
+
+  
+  @media (max-width: 480px) {
+    .video1, .video2 {
+      width: 100%;
+    }
+    .box {
+      width: 100%;
+    }
+  }
