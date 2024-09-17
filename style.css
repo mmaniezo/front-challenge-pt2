@@ -45,17 +45,17 @@ body {
 header {
     position: relative;
     height: auto;
-    width: 100vw;
+    width: 100%;
 }
 
 .image-container {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100%;
 }
 
 .image-container img {
-    width: 100vw;
+    width: 100%;
     height: auto;
     display: block;
 }
@@ -120,9 +120,6 @@ img.logo {
         top: 60%; /
     }
 
-    .image-container img {
-        height: 30vh; 
-    }
 }
 
 
@@ -194,7 +191,7 @@ div.card-body{
     display: flex;
     align-items: center;
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 
@@ -246,6 +243,10 @@ div.card-body{
     .titulo_section1 h3{
         font-size: 1.1rem;
     }
+
+    .card_icon{
+        margin-bottom: 20px;
+    }
 }
 @media(max-width: 380px) {
     .titulo_section1 h2{
@@ -262,12 +263,12 @@ div.card-body{
 }
 
 .imgsec3{
-    width: 95%;
+    width: 90%;
 }
 
 .gridContainer {
     
-    padding: 10px 30px 0px 30px;
+    padding: 10px 10px 0px 10px;
     display: grid;
     justify-items: center;
     align-items: center;
@@ -347,7 +348,8 @@ p {
 @media screen and (max-width: 688px){
     .imgsec3 {
         height: 100%;
-        width: 100%;
+        width: 90%;
+        
     }
     #secao3 h2 {
         font-size: 1.6rem;
@@ -363,6 +365,7 @@ p {
     }
     .container h3{
         font-size: 1rem;
+        margin: 10px;
     }
     .container p{
         font-size: 0.8rem;
@@ -378,51 +381,37 @@ p {
 
 }
 
-.video1{
-    width: 686px;
-    height: 357px;
-    text-align: center;
-    padding: 15px;
-    margin-left: 104px;
-}
-
-.video2{
-    width: 645.548px;
-    height: 400.141px;
-    margin-right: 10px;
-}
-
 .secao-texto{
-    color: #000000;
+    color: #171717;
     text-align: center;
-    font-family: Michroma;
-    font-size: 56px;
-    font-style: normal;
+    font-family: 'michroma';
+    font-size: 2.2rem;
     font-weight: 400;
-    line-height: 150%; 
     display: flex;
-    width: 880px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'michroma';
+    color: #0e0c0c;
+    display: block;
+    justify-content: center;
+    align-items: center;
     
-    padding-bottom: 100px;
-    padding-top: 100px;
 }
 
 #secao2 {
-    padding: 40px;
-    background-color: #f9f9f9;
     display: grid;
     grid-template-areas:
-     ". video1 video1 "
-    ". texto texto"
-    ". video2 box1"
-    ". video2 box2"
-    ". video2 box3";
+    "video1 video1"
+    "texto texto"
+    "video2 box1"
+    "video2 box2"
+    "video2 box3";
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+}
 
-    
-  }
-     
-  
-  .video-container {
+/* .video-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -430,7 +419,7 @@ p {
     height: 416.141px;
     margin-right: 20px;
 
-}
+} */
   
 .box-container {
     display: flex;
@@ -446,7 +435,20 @@ p {
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    
+}
+
+.box:hover{
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    border: none;
+}
+
+
+.video1:hover,
+.video2:hover {
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    border: none;
 }
 
 #box1{
@@ -467,24 +469,43 @@ p {
     background-color: #087CA7;
     color: white;
 }
-.video2{
-    grid-area: video2;
-}
+
 .video1{
     grid-area: video1;
+    text-align: center;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    max-width: 645px; 
+    width: 90vw; 
+    height: 70vh;
+    border-radius: 20px;
+}
+
+.video2{
+    grid-area: video2;
+    text-align: center;
+    display: flex;
+    max-width: 645px;
+    height: auto;
+    margin-right: 10px;
+    width: 70vw;
+    height: 70vh;
+    border-radius: 20px;
 }
 .secao-texto{
     grid-area: texto;
 }
 
-div .box p{
-    font-family: Mina;
+.box p{
+    font-family: 'mina';
 }
 
 @media (max-width: 768px) {
     #secao2{
         display: grid;
-        grid-template-areas: 'video1'
+        grid-template-areas: 
+        'video1'
         'texto'
         'video2'
         'box1'
@@ -493,31 +514,44 @@ div .box p{
         justify-items: center;
     }
     .video1, .video2 {
-      width: 100%;
+      height: 60vh;
       justify-items: center;
     }
-    .box {
+    /* .box {
       width: calc(50% - 20px);
+
+    } */
+
+    .box p{
+        font-size: 1rem;
     }
+
     .secao-texto{
         width: 100%;
     }
     #box1{
         justify-items: center;
     }
-    .video1{
-        padding: 150px;
+    /* .video1{
+        padding: 20px;
+        height: 70vh;
         width: 130%;
-        height: 120%;
+        height: 120%; 
+        height: 70vh;
+    } */
+}
+
+@media(max-width: 620px) {
+    .secao-texto{
+        font-size: 1.2rem;
     }
 
-
-  }
-
+}
   
   @media (max-width: 480px) {
     .video1, .video2 {
-      width: 100%;
+      
+      height: 40vh;
     }
     .box {
       width: 100%;
