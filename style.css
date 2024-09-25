@@ -167,7 +167,7 @@ img.logo {
     text-align: center;
     font-size: 24px;
     flex-wrap: wrap; 
-    gap: 5px;
+    gap: 20px;
     margin: 0 15px 0 15px;
 }
 
@@ -176,7 +176,6 @@ div.card-body{
 }
 
 #secao1{
-    width: 100%;
     margin-bottom: 40px;
 }
 
@@ -406,6 +405,7 @@ p {
     "video2 box1"
     "video2 box2"
     "video2 box3";
+    width: auto;
     justify-items: center;
     align-items: center;
     gap: 20px;
@@ -477,8 +477,8 @@ p {
     justify-items: center;
     align-items: center;
     max-width: 645px; 
-    width: 90vw; 
-    height: 70vh;
+    height: 60vh;
+    width: 100vw;
     border-radius: 20px;
 }
 
@@ -489,8 +489,8 @@ p {
     max-width: 645px;
     height: auto;
     margin-right: 10px;
-    width: 70vw;
-    height: 70vh;
+    width: 50vw;
+    height: 60vh;
     border-radius: 20px;
 }
 .secao-texto{
@@ -501,7 +501,12 @@ p {
     font-family: 'mina';
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1090px) {
+
+
+}
+
+@media (max-width: 976px) {
     #secao2{
         display: grid;
         grid-template-areas: 
@@ -514,8 +519,11 @@ p {
         justify-items: center;
     }
     .video1, .video2 {
-      height: 60vh;
+      
       justify-items: center;
+    }
+    .video1{
+        width: 80vw;
     }
     /* .box {
       width: calc(50% - 20px);
@@ -545,15 +553,19 @@ p {
     .secao-texto{
         font-size: 1.2rem;
     }
+    .video1{
+        width: 80vw;
+    }
 
 }
   
   @media (max-width: 480px) {
     .video1, .video2 {
-      
-      height: 40vh;
+      height: 50vh;
     }
+
+
     .box {
-      width: 100%;
+      width: 90vw;
     }
   }
