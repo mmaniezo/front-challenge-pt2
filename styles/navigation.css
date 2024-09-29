@@ -17,6 +17,8 @@
 .link-pages {
     display: flex;
     gap: 3rem;
+    font-family: 'Michroma';
+    font-size: 18px;
 }
 
 .item-page {
@@ -72,11 +74,9 @@ nav.menu {
     height: 0;
     z-index: 11;
     backdrop-filter: blur(100px);
-    border-radius: 20px;
+    border-radius: 10px;
     overflow: hidden;
     font-family: 'michroma';
-    
-
 }
 
 .item-page-drop {
@@ -87,7 +87,6 @@ nav.menu {
     border-radius: 5px;
     width: 100%;
     text-decoration: none;
-
 }
 
 .item-page-drop:hover {
@@ -102,12 +101,9 @@ nav.menu {
     flex-direction: column;
     align-items: center;
     width: 50vw;
-    left: 50%;
     padding: 0 0 0 0;
-    transform: translateX(-50%);
     height: auto;
-    transition: all 0.5s ease-out;
-    
+    transition: all 0.3s ease;
 }
 
 .menu_dropdown li {
@@ -116,8 +112,7 @@ nav.menu {
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 18px;
-    
+    font-size: 16px;
 }
 
 .direita {
@@ -150,12 +145,11 @@ nav.menu {
 
 @media(max-width: 576px) {
     .menu_dropdown {
-        
-        left: 2rem;
+        left: 2.3rem;
         width: unset;
     }
     .menu_dropdown.open {
-        width: 55vw;
+        width: 80vw;
     }
 
     nav .toggle_btn {
