@@ -102,8 +102,8 @@ img.logo {
 
 @media (max-width: 390px) {
     .caixa {
-        font-size: 0.8rem;
-        top: 60%; /
+        font-size: 0.6rem;
+        top: 60%; 
     }
 
 }
