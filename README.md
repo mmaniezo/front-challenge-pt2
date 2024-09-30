@@ -18,4 +18,4 @@ Vinicius Rozas Pannuci de Paula Cont - RM: 555338<br>
 
 ### Descrição
 <p>Esse projeto é dedicado à idealização da landing page (Figma da Sprint passada), visando ser a entrega final da Challenge. Um projeto focado em HTML, CSS e um pouco de JS visando fazer uma cópia do Figma proposto antes.</p>
-<p>Usando a responsividade e buscando a máxima semelhança ao Figma.</p>
+<p>Usando a responsividade, Bootstap e buscando a máxima semelhança ao Figma.</p>
